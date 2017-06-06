@@ -60,3 +60,11 @@ const var3 = 30;
 //Block var3 30
 //original var3 300
 //const supports Block Scoping
+
+//Template Literals
+//referred to strings that have embedded expressions within them
+let companyName = 'bmw';
+let carName = companyName + ' x5';//traditional method
+//console.log(carName);
+let fullCarName = `${companyName} x5`;//Template Literal is used here. Note you have to use `` and not this ''
+//console.log(fullCarName);
