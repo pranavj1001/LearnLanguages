@@ -82,3 +82,23 @@ function getNumbers(...array3){
 }
 //getNumbers(array2);
 getNumbers(2, 5, 7 , 8, 9);
+
+//Destructuring Assignments
+//The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+//for arrays
+let array4 = [1, 2, 3];
+//the traditional way
+//let one = array4[0];
+//let two = array4[1];
+//with Destructuring Assignments
+let [one, twos] = array4;
+//console.log(one, twos);
+//for objects
+let person = {name: 'Dovah', heightInCm: '180', weightInKg: '82'};
+//the traditional way
+//let heightInCm = person.heightInCm;
+//let weightInKg = person.weightInKg;
+//Destructuring Assignments
+//let {heightInCm, weightInKgs} = person; wont work, the names should match the names in the objArray
+let {heightInCm, weightInKg} = person;
+console.log(heightInCm, weightInKg);
