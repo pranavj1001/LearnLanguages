@@ -68,3 +68,9 @@ let carName = companyName + ' x5';//traditional method
 //console.log(carName);
 let fullCarName = `${companyName} x5`;//Template Literal is used here. Note you have to use `` and not this ''
 //console.log(fullCarName);
+
+//Spread Operators
+//one simply pass an array with Spread Operators
+let array1 = [10, 20, 30, 40];
+let array2 = [...array1, 50, 60];//value of array1 is spreaded in array2
+//console.log(array2);
