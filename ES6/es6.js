@@ -18,3 +18,45 @@ const absoluteLimit = 100000;
 const fruits = ['apple', 'mango', 'strawberry'];
 fruits.push('pineapple');//you cannot reassign data but you can add data
 //console.log(fruits);
+
+//Block Scoping
+//advantage of 'let'
+let var1 = 10;
+
+{
+  let var1 = 100;
+  //console.log('Block var1', var1);
+}
+
+//console.log('original var1', var1);
+//Output:
+//Block var1 10
+//original var 10
+//let supports Block Scoping
+
+//if we were using the old style ie 'var'
+var var2 = 20;
+
+{
+  var var2 = 50;
+  //console.log('Block var2', var2);
+}
+
+//console.log('original var2', var2);
+//Output:
+//Block var2 50
+//original var2 50
+//var doesn't support Block Scoping
+
+//if we use the const type declaration
+const var3 = 30;
+
+{
+  const var3 = 300;
+  //console.log('Block var3', var3);
+}
+//console.log('original var3', var3);
+//Output:
+//Block var3 30
+//original var3 300
+//const supports Block Scoping
