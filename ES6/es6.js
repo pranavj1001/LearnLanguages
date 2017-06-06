@@ -74,3 +74,11 @@ let fullCarName = `${companyName} x5`;//Template Literal is used here. Note you 
 let array1 = [10, 20, 30, 40];
 let array2 = [...array1, 50, 60];//value of array1 is spreaded in array2
 //console.log(array2);
+
+//Rest Parameters
+//similar to Spread Operators
+function getNumbers(...array3){
+  //console.log(array3);
+}
+//getNumbers(array2);
+getNumbers(2, 5, 7 , 8, 9);
