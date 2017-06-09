@@ -132,3 +132,18 @@ let squaredArray = numberArray.map((number) => number * number );
 let fruitPrices = [12, 15, 25, 10, 19, 22];
 let reasonableFruitPrices = fruitPrices.filter((price) => price <= 15);
 //console.log(reasonableFruitPrices);
+
+//String Helper Methods
+//1) Repeat Method
+//used to create a large string by just concatenating string a number of times
+//let stringToRepeat = "Witcher 3  is the" + "e".repeat(3) + " game" + "!".repeat(5);
+//let us use the Template Literals
+let stringToRepeat = `Witcher 3  is the${"e".repeat(3)} game${"!".repeat(5)}`;
+//console.log(stringToRepeat);
+//2) startsWith and endsWith
+//will return a boolean value
+//console.log(stringToRepeat.startsWith("Witcher"));//O/P -> true//endsWith is similar except the obvious change.
+//3) includes
+//will return a boolean value
+//just search for the string in a string
+//console.log(stringToRepeat.includes("ee"));//O/P -> true
