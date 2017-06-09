@@ -119,7 +119,7 @@ greet();
 
 //Helper Methods
 //Types of Helper Methods
-//1) Map Helper Metods
+// 1) Map Helper Metods
 let numberArray = [10, 20, 30];
 // let square = (number) => {
 //   return number * number;
@@ -128,22 +128,37 @@ let numberArray = [10, 20, 30];
 // or
 let squaredArray = numberArray.map((number) => number * number );
 //console.log(squaredArray);
-//2) Filter Helper Methods
+// 2) Filter Helper Methods
 let fruitPrices = [12, 15, 25, 10, 19, 22];
 let reasonableFruitPrices = fruitPrices.filter((price) => price <= 15);
 //console.log(reasonableFruitPrices);
 
 //String Helper Methods
-//1) Repeat Method
+// 1) Repeat Method
 //used to create a large string by just concatenating string a number of times
 //let stringToRepeat = "Witcher 3  is the" + "e".repeat(3) + " game" + "!".repeat(5);
 //let us use the Template Literals
 let stringToRepeat = `Witcher 3  is the${"e".repeat(3)} game${"!".repeat(5)}`;
 //console.log(stringToRepeat);
-//2) startsWith and endsWith
+// 2) startsWith and endsWith
 //will return a boolean value
 //console.log(stringToRepeat.startsWith("Witcher"));//O/P -> true//endsWith is similar except the obvious change.
-//3) includes
+// 3) includes
 //will return a boolean value
 //just search for the string in a string
 //console.log(stringToRepeat.includes("ee"));//O/P -> true
+
+//check numbers
+// 1) isFinite helps to validate our code to help us to not to break our code
+let luggageInfo = (name, weight) => {
+  return Number.isFinite(weight);
+}
+// console.log(luggageInfo('mobile', Infinity));//O/P -> false
+// console.log(luggageInfo('mobile', 45));//O/P -> true
+// console.log(luggageInfo('mobile', Math.pow(9, 67)));//O/P -> true
+
+// 2) isSafeInteger, in above isFinite returned true when put the weight as 9^67 but JS handles numbers only upto 2^53, so 9^67 cannot be handled in usual manners and thus its not a safe isSafeInteger
+let safeLuggageInfo = (name, weight) => {
+  return Number.isSafeInteger(weight);
+}
+// console.log(safeLuggageInfo('mobile', Math.pow(9, 67)));//O/P -> false
