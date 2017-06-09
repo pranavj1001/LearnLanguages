@@ -112,7 +112,23 @@ let {heightInCm, weightInKg} = person;
 //the Anonymous arrow function expression
 //similarly you can also define arrow functions for other Anonymous functions like the one in setTimeout(()=>{},timeInMSecs);
 //just remember the '=>'
-var greet  = () => {
+let greet  = () => {
   //console.log("Hola");
 }
 greet();
+
+//Helper Methods
+//Types of Helper Methods
+//1) Map Helper Metods
+let numberArray = [10, 20, 30];
+// let square = (number) => {
+//   return number * number;
+// }
+// let squaredArray = numberArray.map(square);
+// or
+let squaredArray = numberArray.map((number) => number * number );
+//console.log(squaredArray);
+//2) Filter Helper Methods
+let fruitPrices = [12, 15, 25, 10, 19, 22];
+let reasonableFruitPrices = fruitPrices.filter((price) => price <= 15);
+//console.log(reasonableFruitPrices);
