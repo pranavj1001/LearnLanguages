@@ -101,4 +101,18 @@ let person = {name: 'Dovah', heightInCm: '180', weightInKg: '82'};
 //Destructuring Assignments
 //let {heightInCm, weightInKgs} = person; wont work, the names should match the names in the objArray
 let {heightInCm, weightInKg} = person;
-console.log(heightInCm, weightInKg);
+//console.log(heightInCm, weightInKg);
+
+//Arrow function
+//Arrow Functions are considered to be Anonymous by default
+//the traditional Anonymous function expression
+// var greet = function() {
+//   console.log("Hello");
+// }
+//the Anonymous arrow function expression
+//similarly you can also define arrow functions for other Anonymous functions like the one in setTimeout(()=>{},timeInMSecs);
+//just remember the '=>'
+var greet  = () => {
+  //console.log("Hola");
+}
+greet();
