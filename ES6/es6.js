@@ -162,3 +162,11 @@ let safeLuggageInfo = (name, weight) => {
   return Number.isSafeInteger(weight);
 }
 // console.log(safeLuggageInfo('mobile', Math.pow(9, 67)));//O/P -> false
+
+//Modules
+//Modules refer to reusable pieces of code in our application.
+//they appear independently in their own separate files
+import {carCompanies, carModels, divide} from './exampleModule'
+//import divie from './exampleModule' //syntax to get the default method
+//console.log(carCompanies, carModels);
+//console.log(divide(4,2));
