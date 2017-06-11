@@ -55,6 +55,7 @@ const var3 = 30;
   const var3 = 300;
   //console.log('Block var3', var3);
 }
+
 //console.log('original var3', var3);
 //Output:
 //Block var3 30
@@ -204,6 +205,8 @@ var Rectangle = class Rectangle3 {
     this.width = width;
   }
 };
+
+//create an instance of Rectangle1
 let rectABCD = new Rectangle1(23, 18, "red");
 //console.log(rectABCD);
 //rectABCD.getColour();
@@ -223,6 +226,7 @@ let roundRectEFGH = new RoundedRectangle(27, 89, "blue", 6);
 //console.log(roundRectEFGH);
 //roundRectEFGH.getColour();
 import {Circle} from './exampleModule';//imported class from exampleModule.js
+//create an instance of Circle
 let circleO = new Circle(56);
 //console.log(circleO);
 
@@ -235,3 +239,29 @@ class Square {
 }
 let squareABCD = Square.area(56);
 //console.log(squareABCD);
+
+//Prototypes
+//Every JavaScript object has a prototype. The prototype is also an object.
+//All JavaScript objects inherit their properties and methods from their prototype.
+function shipInfo(name, type, inServiceSince){
+  this.name = name;
+  this.type = type;
+  this.inServiceSince = inServiceSince;
+
+  this.numberOfFloors = (floors) => `${this.name} has ${floors} floors.`;
+
+}
+//add another property
+shipInfo.prototype.numberofCrewMembers;
+//add another property function
+//Can't use arrow function here because arrow functions don't create 'this' object for the function prototype to reference
+//therefore use the normal function
+shipInfo.prototype.info = function(companyName){
+  return `${this.name} is owned by ${companyName}`;
+};
+//create an instance
+let ship1 = new shipInfo("Oasis of the Seas", "Cruise Ship", "2009");
+ship1.numberofCrewMembers = 750;
+//console.log(ship1);
+//console.log(ship1.numberOfFloors(20));
+//console.log(ship1.info("Royal Caribbean International"));
