@@ -225,3 +225,13 @@ let roundRectEFGH = new RoundedRectangle(27, 89, "blue", 6);
 import {Circle} from './exampleModule';//imported class from exampleModule.js
 let circleO = new Circle(56);
 //console.log(circleO);
+
+//Static Methods in Classes
+//The static keyword defines a static method for a class. Static methods are called without instantiating their class and cannot be called through a class instance. Static methods are often used to create utility functions for an application.
+class Square {
+  static area(sideLength){
+    return sideLength*sideLength;
+  }
+}
+let squareABCD = Square.area(56);
+//console.log(squareABCD);
