@@ -207,3 +207,21 @@ var Rectangle = class Rectangle3 {
 let rectABCD = new Rectangle1(23, 18, "red");
 //console.log(rectABCD);
 //rectABCD.getColour();
+
+//Inheritance in classes
+class RoundedRectangle extends Rectangle1 {
+  constructor(height, width, colour, cornerRadius){
+    super(height, width, colour);
+    this.cornerRadius = cornerRadius;
+  }
+  getColour(){
+    console.log(`The roundRectangle with ${this.height}cm height ${this.width}cm width and ${this.cornerRadius}cm cornerRadius has a ${this.colour} colour`);
+  }
+}
+
+let roundRectEFGH = new RoundedRectangle(27, 89, "blue", 6);
+//console.log(roundRectEFGH);
+//roundRectEFGH.getColour();
+import {Circle} from './exampleModule';//imported class from exampleModule.js
+let circleO = new Circle(56);
+//console.log(circleO);

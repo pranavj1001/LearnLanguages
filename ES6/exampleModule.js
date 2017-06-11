@@ -5,3 +5,11 @@ let divide = (number1, number2) =>{
 }
 export {carCompanies, carModels, divide};
 export default divide;//syntax to declare a default method
+
+class Circle {
+  constructor(radius){
+    this.radius = radius;
+  }
+}
+
+export {Circle};
