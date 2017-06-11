@@ -170,3 +170,40 @@ import {carCompanies, carModels, divide} from './exampleModule'
 //import divie from './exampleModule' //syntax to get the default method
 //console.log(carCompanies, carModels);
 //console.log(divide(4,2));
+
+//Class
+//Classes are "special functions", and just as you can define function expressions and function declarations, the class syntax has two components: class expressions and class declarations
+//Unlike Functions, classes are not hoisted
+//this will throw an error
+// var p = new Rectangle(); // ReferenceError
+// class Rectangle {}
+//Class Declaration:
+class Rectangle1 {
+  constructor(height, width, colour) {
+    this.height = height;
+    this.width = width;
+    this.colour = colour;
+  }
+  getColour() {
+    console.log(`The rectangle with ${this.height}cm height and ${this.width}cm width has a ${this.colour} colour`);
+  }
+
+};
+//Similar to function expressions, here also we have Class Expressions:
+// unnamed
+var Rectangle2 = class {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+};
+// named
+var Rectangle = class Rectangle3 {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+};
+let rectABCD = new Rectangle1(23, 18, "red");
+//console.log(rectABCD);
+//rectABCD.getColour();
