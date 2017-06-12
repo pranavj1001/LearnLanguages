@@ -265,3 +265,34 @@ ship1.numberofCrewMembers = 750;
 //console.log(ship1);
 //console.log(ship1.numberOfFloors(20));
 //console.log(ship1.info("Royal Caribbean International"));
+
+//Data Structures
+// 1) Set -> similar to array but can only store unique values.
+let set = new Set();
+//add method
+//integers
+set.add(30);
+set.add(13);
+set.add(12);
+//strings
+set.add("string");
+//objects
+set.add({firstObject: 60, secondObject: 70});
+//console.log(set);
+//console.log(set.size);// to know the size
+//console.log(set.has("string"));// to check for an element
+//to convert an array to set
+let flowers = ["rose", "lily", "daffodils"];
+let flowersSet = new Set(flowers);
+//console.log(flowers);
+//console.log(flowersSet);
+//to traverse through the set
+for (let element of flowersSet.values()){
+  //console.log(element);
+}
+//trick to get unique elements from a string
+let sentence = "fansakjvbjvbsdhvhbsdhvbabvjabjaisoalkmz,nawnfkjgvnajkfalmaskldmasdm";
+let sentenceArray = sentence.split("");
+let sentenceSet = new Set(sentenceArray);
+//console.log(sentenceArray);
+//console.log(sentenceSet);
