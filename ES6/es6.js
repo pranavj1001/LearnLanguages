@@ -296,3 +296,40 @@ let sentenceArray = sentence.split("");
 let sentenceSet = new Set(sentenceArray);
 //console.log(sentenceArray);
 //console.log(sentenceSet);
+
+// 2) Maps -> has keys and values. Each key is unique.
+let map = new Map();
+//map.set method takes two Parameters: key and value
+//strings as keys
+let keyOfMap = "SampleKey";
+let valueOfMap = "SampleValue";
+map.set(keyOfMap, valueOfMap);
+map.set("SampleKey1", "SampleValue1");
+//object as a key
+let keyOfMap2 = {sampleObject: 'SampleKey2'};
+map.set(keyOfMap2, "SampleValue2");
+//function as a key
+let keyOfMap3 = function() {};
+map.set(keyOfMap3, "SampleValue3");
+//console.log(map);
+//convert an array to a Map
+let numberArray1 = [[1, 'one'], [2, 'two'], [3, 'three']];
+let numberSet = new Map(numberArray1);
+//console.log(numberSet);
+//to traverse through the map
+for (let [key, value] of numberSet.entries()){
+  //console.log(`${key} => ${value}`);
+}
+//trick to get unique elements from a string
+let sentence1 = "jahbahbchabcjksaufgabshjabchabnzbchuyasbfabncjhbahbshcbsajkcbashbcvjhasb";
+let sentence1Map = new Map();
+let currentLetter;
+for( let i = 0; i < sentence1.length; i++){
+  currentLetter = sentence1[i];
+  if(!(sentence1Map.has(currentLetter))){ // similar to if(sentence1Map.has(currentLetter) == false) // if the currentLetter is not in the map
+    sentence1Map.set(currentLetter, 1);
+  }else{ // if the currentLetter has already been added to the map then update its count value
+    sentence1Map.set(currentLetter, sentence1Map.get(currentLetter) + 1);
+  }
+}
+//console.log(sentence1Map);
