@@ -346,3 +346,21 @@ let sampleFunction = () => {
 }
 //console.log(data); //will throw an error
 sampleFunction();
+
+//Function Factories
+//In this example, we have defined a function makeAdder(x), which takes a single argument, x, and returns a new function.
+//The function it returns takes a single argument, y, and returns the sum of x and y.
+//In essence, makeAdder is a function factory — it creates functions which can add a specific value to their argument.
+// let makeAdder = (x) => {
+//   // can make it shorter, thanks to ES6
+//   // return (y) => {
+//   //   return x + y;
+//   // };
+//   return y => x + y;
+// }
+// can make it further shorter, thanks to ES6
+let makeAdder = (x) => (y) => x + y;
+let add5 = makeAdder(5);
+let add10 = makeAdder(10);
+//console.log(add5(2));  // 7
+//console.log(add10(2)); // 12
