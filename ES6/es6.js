@@ -333,3 +333,16 @@ for( let i = 0; i < sentence1.length; i++){
   }
 }
 //console.log(sentence1Map);
+
+//Closures
+//A closure is the combination of a function and the lexical environment within which that function was declared.
+//we can create function factories and private data with Closures
+let sampleFunction = () => {
+  let data = "Dovahkiin"; //data is a local variable created by sampleFunction
+  let logData = () => { //logData() is the inner function, a closure
+    //console.log(data); //use variable declared in the parent function
+  }
+  logData();
+}
+//console.log(data); //will throw an error
+sampleFunction();
