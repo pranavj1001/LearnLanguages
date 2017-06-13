@@ -364,3 +364,25 @@ let add5 = makeAdder(5);
 let add10 = makeAdder(10);
 //console.log(add5(2));  // 7
 //console.log(add10(2)); // 12
+
+//Private Methods -> used to restrict access
+const account = () => {
+  let amount = 0;
+  let editAmount = (value) => {
+    return amount += value;
+  }
+  const editAccount = (changeAmount) => editAmount(changeAmount);
+  const checkAccount = () => amount;
+  // return {
+  //   editAccount: editAccount,
+  //   checkAccount: checkAccount
+  // }
+  //or
+  return { editAccount, checkAccount }
+}
+let currentAmount = account();
+//console.log(currentAmount);
+currentAmount.editAccount(50);
+//console.log(currentAmount.checkAccount());
+currentAmount.editAccount(-10);
+//console.log(currentAmount.checkAccount());
