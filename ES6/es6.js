@@ -439,9 +439,10 @@ let iterator = sampleArrayIterator([1, 2, 3]);
 
 function* sampleArrayGenerator(){
   // yield arguments //to return the full argument array at once
-  for (let arg of arguments) {
-    yield arg;
-  }
+  // for (let arg of arguments) { // for loop to traverse
+  //   yield arg;
+  // }
+  yield* arguments; //same thing can be done with a just one line of code
 }
 let gener = sampleArrayGenerator(1, 2, 3);
 // console.log(gener.next().value);
