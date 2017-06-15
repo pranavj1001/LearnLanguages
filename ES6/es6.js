@@ -399,3 +399,23 @@ let gen = idMaker();
 // console.log(gen.next().value); // 1
 // console.log(gen.next().value); // 2
 // console.log(gen.next().value); // undefined
+
+//reseting Generators
+function* oddNumbers() {
+  let addition = 1;
+  while(true){
+    if(reset){
+      addition = 1;
+    }
+    let reset = yield addition;
+    addition += 2;
+  }
+}
+let oddNumbersSeries = oddNumbers();
+// console.log(oddNumbersSeries.next().value);
+// console.log(oddNumbersSeries.next().value);
+// console.log(oddNumbersSeries.next().value);
+// console.log(oddNumbersSeries.next().value);
+// console.log(oddNumbersSeries.next(true).value);
+// console.log(oddNumbersSeries.next().value);
+// console.log(oddNumbersSeries.next().value);
