@@ -419,3 +419,31 @@ let oddNumbersSeries = oddNumbers();
 // console.log(oddNumbersSeries.next(true).value);
 // console.log(oddNumbersSeries.next().value);
 // console.log(oddNumbersSeries.next().value);
+
+//Benefits of Generators against iterators
+//Sample iterator
+const sampleArrayIterator = (array) => {
+  let index = 0;
+  return {
+    nextItem: () => {
+      return index < array.length ?
+               {value: array[index++], done: false} :
+               {done: true};
+    }
+  };
+}
+let iterator = sampleArrayIterator([1, 2, 3]);
+// console.log(iterator.nextItem().value);
+// console.log(iterator.nextItem().value);
+// console.log(iterator.nextItem().value);
+
+function* sampleArrayGenerator(){
+  // yield arguments //to return the full argument array at once
+  for (let arg of arguments) {
+    yield arg;
+  }
+}
+let gener = sampleArrayGenerator(1, 2, 3);
+// console.log(gener.next().value);
+// console.log(gener.next().value);
+// console.log(gener.next().value);
