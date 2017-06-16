@@ -1,3 +1,8 @@
+
+**if** you already have a ES6 environment setup OR you just want to go through the main file then 'es6.js' file in the 'app' folder is the file that you want.
+
+**else**
+
 ## To get started
 
 1. Setup this repo on your machine.
