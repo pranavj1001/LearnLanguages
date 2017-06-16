@@ -466,3 +466,11 @@ promise.then((successMessage) => {
   //console.log("Yay! " + successMessage);
 });
 //console.log("This will be logged before the promise");
+
+//Fetch method
+//The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses.
+//It also provides a global fetch() method that provides an easy, logical way to fetch resources asynchronously across the network.
+const url = 'http://jsonplaceholder.typicode.com/posts/1';
+// fetch(url, {method: "GET"})
+//   .then(result => result.json())
+//   .then(jsonFile => console.log(jsonFile));
