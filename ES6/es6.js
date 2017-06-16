@@ -1,4 +1,4 @@
-console.log("Pranav Jain here");
+console.log("Hey, there!");
 
 //simple ES5 var declaration
 var limit = 1000;
