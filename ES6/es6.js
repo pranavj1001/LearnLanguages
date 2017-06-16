@@ -448,3 +448,21 @@ let gener = sampleArrayGenerator(1, 2, 3);
 // console.log(gener.next().value);
 // console.log(gener.next().value);
 // console.log(gener.next().value);
+
+//Promises
+//The Promise object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.
+let promise = new Promise((resolve, reject) => {
+  // We call resolve(...) when what we were doing made async successful, and reject(...) when it failed.
+  // In this example, we use setTimeout(...) to simulate async code.
+  setTimeout(() => {
+    resolve("Success!"); // Yay! Everything went well!
+  }, 2000);
+  //reject("Rejected data");
+});
+// use 'then' to handle resolve function and 'catch' to handle reject function
+promise.then((successMessage) => {
+  // successMessage is whatever we passed in the resolve(...) function above.
+  // It doesn't have to be a string, but if it is only a succeed message, it probably will be.
+  //console.log("Yay! " + successMessage);
+});
+//console.log("This will be logged before the promise");
