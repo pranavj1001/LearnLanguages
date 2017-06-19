@@ -17,12 +17,13 @@ This repo contains the code for learning many languages. I'll be adding more lan
 ### Added Languages
 
 1. ES6 (EcmaScript 2015)
+2. PHP
 
 ### Upcoming Languages
 
-1. PHP (Will be added soon)
-2. C#
-3. Python
+1. C
+2. Python
+3. C#
 
 ### Learning/Reading Strategy
 
