@@ -1,11 +1,13 @@
 # LearnLanguages
-Learn new and different languages.
+Learn new and different languages, frameworks and libraries.
 
 <br>
 
 Hey there, 
 
 This repo contains the code for learning many languages. I'll be adding more languages.
+
+**Update** - Initially I had plans to add learning code for languages only but now I'll be adding info about frameworks and libraries also.
 
 ### Target Audience
 
@@ -19,11 +21,19 @@ This repo contains the code for learning many languages. I'll be adding more lan
 1. ES6 (EcmaScript 2015)
 2. PHP
 
+### Added Frameworks
+
+1. Django - Source: [Django Girls](https://tutorial.djangogirls.org/en/) The tutorial provided here contains all the information that you need to get started with django. I learnt the basics from here. In this repo, I've just posted the complete project that you can build by following the tutorial. You can follow the code given here incase you're having some problems in your code.
+
 ### Upcoming Languages
 
 1. C
 2. Python
 3. C#
+
+### Upcoming Frameworks
+
+1. Angular 4
 
 ### Learning/Reading Strategy
 
