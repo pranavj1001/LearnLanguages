@@ -2,3 +2,10 @@ python/DjangoTutorial/.idea
 python/DjangoTutorial/DjangoTutorial/__pycache__
 python/DjangoTutorial/blog/__pycache__
 python/DjangoTutorial/blog/migrations/__pycache__
+*.pyc
+*~
+__pycache__
+myvenv
+db.sqlite3
+/static
+.DS_Store
