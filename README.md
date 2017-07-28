@@ -28,6 +28,7 @@ This repo contains the code for learning many languages. I'll be adding more lan
 ### Added Data Structures
 
 1. Linked Lists
+2. Stacks
 
 **Note:** Currently I've added data structures in python only.
 
@@ -43,9 +44,8 @@ This repo contains the code for learning many languages. I'll be adding more lan
 
 ### Upcoming Data Structures
 
-1. Stacks
-2. Queues
-3. Binary Search Trees
+1. Queues
+2. Binary Search Trees
 
 ### Learning/Reading Strategy
 
