@@ -9,4 +9,4 @@ myvenv
 db.sqlite3
 /static
 .DS_Store
-python/DataStructures/LinkedLists/.idea
+python/DataStructures/**/.idea
