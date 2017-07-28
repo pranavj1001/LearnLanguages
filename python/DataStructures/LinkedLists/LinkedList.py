@@ -28,7 +28,7 @@ class LinkedList(object):
     # O(n)
     def insertAtEnd(self, data):
 
-        if self.head is None:
+        if not self.head:
             self.insertAtStart(data)
             return
 
@@ -37,7 +37,7 @@ class LinkedList(object):
         newNode = Node(data)
         actualNode = self.head
 
-        while actualNode.nextNode is not None:
+        while actualNode.nextNode:
             actualNode = actualNode.nextNode
 
         actualNode.nextNode = newNode
@@ -47,7 +47,7 @@ class LinkedList(object):
 
         self.counter -= 1
 
-        if self.head is not None:
+        if self.head:
             if data == self.head.data:
                 self.head = self.head.nextNode
             else:
@@ -57,6 +57,6 @@ class LinkedList(object):
     def traverseList(self):
         actualNode = self.head
 
-        while actualNode is not None:
+        while actualNode:
             print("%d" % actualNode.data)
             actualNode = actualNode.nextNode
