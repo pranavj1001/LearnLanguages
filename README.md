@@ -25,6 +25,12 @@ This repo contains the code for learning many languages. I'll be adding more lan
 
 1. Django - Source: [Django Girls](https://tutorial.djangogirls.org/en/) The tutorial provided here contains all the information that you need to get started with django. I learnt the basics from here. In this repo, I've just posted the complete project that you can build by following the tutorial. You can follow the code given here incase you're having some problems in your code.
 
+### Added Data Structures
+
+1. Linked Lists
+
+**Note:** Currently I've added data structures in python only.
+
 ### Upcoming Languages
 
 1. C
@@ -34,6 +40,12 @@ This repo contains the code for learning many languages. I'll be adding more lan
 ### Upcoming Frameworks
 
 1. Angular 4
+
+### Upcoming Data Structures
+
+1. Stacks
+2. Queues
+3. Binary Search Trees
 
 ### Learning/Reading Strategy
 
