@@ -6,11 +6,11 @@ class Node(object):
         self.nextNode = None
 
     # method to remove an element
-    def remove(self, data, previousNode):
+    def removeRecursive(self, data, previousNode):
         if self.data == data:
             previousNode.nextNode = self.nextNode
             del self.data
             del self.nextNode
         else:
             if self.nextNode is not None:
-                self.nextNode.remove(self, data)
+                self.nextNode.removeRecursive(data, self)
