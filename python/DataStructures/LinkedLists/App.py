@@ -3,10 +3,12 @@ from LinkedList import LinkedList
 linkedList = LinkedList()
 
 linkedList.insertAtEnd(12)
-linkedList.insertAtStart(20)
+linkedList.insertAtEnd(20)
 linkedList.insertAtEnd(80)
 linkedList.insertAtEnd(9)
 linkedList.insertAtEnd(99)
+
+linkedList.insertAtPosition(10, 0)
 
 print("========")
 

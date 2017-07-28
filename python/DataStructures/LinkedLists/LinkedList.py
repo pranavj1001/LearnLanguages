@@ -56,6 +56,40 @@ class LinkedList(object):
         # now add the new node
         actualNode.nextNode = newNode
 
+    # O(n)  method to add an element in a given position
+    def insertAtPosition(self, data, position):
+
+        # if user gave wrong values for the position
+        if (position < 0) or (position > self.counter):
+            print("Sorry can't add")
+
+        # if user wants to add the element at start
+        elif position == 0:
+            self.insertAtStart(data)
+
+        # logic to add elements in between
+        else:
+
+            # increment counter
+            self.counter += 1
+
+            # create a new node
+            newNode = Node(data)
+            # for traversing create a current node
+            actualNode = self.head
+
+            # traverse till we not reach the position
+            for i in range(0, position-1):
+                actualNode = actualNode.nextNode
+
+            # temporary variable to hold the nextNode value
+            temp = actualNode.nextNode
+
+            # now add the new node
+            actualNode.nextNode = newNode
+            # update the nextNode value of the new node
+            newNode.nextNode = temp
+
     # O(n)  method to remove an node
     def remove(self, data):
 
