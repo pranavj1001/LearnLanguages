@@ -6,31 +6,31 @@ class Node(object):
         self.leftChild = None
         self.rightChild = None
 
-    def insert(self, data):
+    def insertRecursive(self, data):
 
         if data < self.data:
             if not self.leftChild:
                 self.leftChild = Node(data)
             else:
-                self.leftChild.insert(data)
+                self.leftChild.insertRecursive(data)
         else:
             if not self.rightChild:
                 self.rightChild = Node(data)
             else:
-                self.rightChild.insert(data)
+                self.rightChild.insertRecursive(data)
 
-    def remove(self, data, parentNode):
+    def removeRecursive(self, data, parentNode):
 
         if data < self.data:
             if self.leftChild:
-                self.leftChild.remove(data, self)
+                self.leftChild.removeRecursive(data, self)
         elif data > self.data:
             if self.rightChild:
-                self.rightChild.remove(data, self)
+                self.rightChild.removeRecursive(data, self)
         else:
             if self.leftChild and self.rightChild:
-                self.data = self.rightChild.getMin
-                self.rightChild.remove(self.data, self)
+                self.data = self.rightChild.getMin()
+                self.rightChild.removeRecursive(self.data, self)
 
             elif parentNode.leftChild == self:
                 if self.leftChild:
@@ -38,7 +38,7 @@ class Node(object):
                 else:
                     tempNode = self.rightChild
 
-                parentNode = self.rightChild
+                parentNode.leftChild = tempNode
 
             elif parentNode.rightChild == self:
                 if self.leftChild:
