@@ -37,8 +37,9 @@ This repo contains the code for learning many languages. I'll be adding more lan
 ### Upcoming Languages
 
 1. C
-2. Python
-3. C#
+2. java
+3. Python
+4. C#
 
 ### Upcoming Frameworks
 
