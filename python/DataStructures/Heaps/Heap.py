@@ -1,86 +1,55 @@
 class Heap(object):
-
+    # Heap's size
     HEAP_SIZE = 10
 
+    # constructor
+    # here we initialize the heap and the currentPosition
     def __init__(self):
-        self.heap = [0]*Heap.HEAP_SIZE
+        self.heap = [0] * Heap.HEAP_SIZE
         self.currentPosition = -1
 
+    # Logic to add elements to an heap
     def insert(self, data):
+        # if heap is full then don't insert the element and return
+        if self.isFull():
+            print("Heap is Full")
+            return
 
-         if self.isFull():
-             print("Heap is Full")
-             return
+        # increase the currentPosition
+        self.currentPosition = self.currentPosition + 1
+        # add the data
+        self.heap[self.currentPosition] = data
+        # check whether the newly added element satisfies the conditions of an heap
+        self.fixUp(self.currentPosition)
 
-         self.currentPosition = self.currentPosition + 1
-         self.heap[self.currentPosition] = data
-         self.fixUp(self.currentPosition)
-
+    # Logic to order elements in an heap when a new element is added
     def fixUp(self, index):
 
-        parentIndex = int((index - 1)/2)
+        # find the currentNode's parent index number i.e. position of its parent node
+        parentIndex = int((index - 1) / 2)
 
+        # since this is a max heap, so swap elements whenever an element larger than its parent node is found
+        # if you want the heap to be min heap then simply comment the above line and uncomment the below line
+        # while parentIndex >= 0 and self.heap[parentIndex] < self.heap[index]:
         while parentIndex >= 0 and self.heap[parentIndex] < self.heap[index]:
-            temp = self.heap[index]
-            self.heap[index] = self.heap[parentIndex]
-            self.heap[parentIndex] = temp
+            self.heap[index], self.heap[parentIndex] = self.heap[parentIndex], self.heap[index]
             index = parentIndex
-            parentIndex = int((index - 1)/2)
+            parentIndex = int((index - 1) / 2)
 
-    def fixDown(self, index, upto):
+    # method to display the heap
+    def displayHeap(self):
 
-        if upto < 0:
-            upto = self.currentPosition
+        if (self.heap):
+            for i in self.heap:
+                print(i)
+        else:
+            print("Heap is empty")
 
-        while index <= upto:
-            leftChild = 2*index+1
-            rightChild = 2*index+2
-
-            if leftChild <= upto:
-                childToSwap = None
-
-                if rightChild > upto:
-                    childToSwap = leftChild
-                else:
-                    if self.heap[leftChild] > self.heap[rightChild]:
-                        childToSwap = leftChild
-                    else:
-                        childToSwap = rightChild
-
-                if self.heap[index] < self.heap[childToSwap]:
-                    temp = self.heap[index]
-                    self.heap[index] = self.heap[childToSwap]
-                    self.heap[childToSwap] = temp
-                else:
-                    break
-
-                index = childToSwap
-
-            else:
-                break
-
-    #Logic for HeapSort
-    def heapSort(self):
-
-        for i in range(0, self.currentPosition + 1):
-            temp = self.heap[0]
-            print(temp)
-            self.heap[0] = self.heap[self.currentPosition - i]
-            self.heap[self.currentPosition - i] = temp
-            self.fixDown(0, self.currentPosition - i - 1)
-
-
+    # Method to find out whether the heap is full or not
+    # used when a new element is added
     def isFull(self):
 
         if self.currentPosition == Heap.HEAP_SIZE:
             return True
         else:
             return False
-
-    def getMax(self):
-        result = self.heap[0]
-        self.currentPosition = self.currentPosition - 1
-        self.heap[0] = self.heap[self.currentPosition]
-        del self.heap[self.currentPosition + 1]
-        self.fixDown(0, -1)
-        return result
