@@ -47,6 +47,43 @@ class BST{
 			preorder(root.right);
 		}
 	}
+	void inorder(Node root){
+		if (root == null) {
+			//System.out.println("tree is Empty");
+		}
+		else {
+			inorder(root.left);
+			System.out.print(root.data+" ");
+			inorder(root.right);
+		}
+	}
+	void postorder(Node root){
+		if (root == null) {
+			//System.out.println("tree is Empty");
+		}
+		if (root != null) {
+			postorder(root.left);
+			postorder(root.right);
+			System.out.print(root.data+" ");
+		}
+	}
+	void getMin(Node root){
+		if(root.left == null){
+			System.out.println("Minimum value of node in tree:"+root.data);
+		}
+		else {
+			getMin(root.left);
+		}
+	}
+	void getMax(Node root){
+		if(root.right == null){
+			System.out.println("Maximum value of node in tree:"+root.data);
+		}
+		else {
+			getMax(root.right);
+		}
+	}
+
 	public static void main(String[] args) {
 		BST binaryST=new BST();
 
@@ -70,5 +107,18 @@ class BST{
 
         System.out.println("preorder traversal is");
 		binaryST.preorder(binaryST.root);
+		System.out.println();
+
+		System.out.println("inorder traversal is");
+		binaryST.inorder(binaryST.root);
+		System.out.println();
+
+		System.out.println("postorder traversal is");
+		binaryST.postorder(binaryST.root);
+		System.out.println();
+
+		binaryST.getMin(binaryST.root);
+
+		binaryST.getMax(binaryST.root);
 	}
 }
