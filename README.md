@@ -7,7 +7,7 @@ Hey there,
 
 This repo contains the code for learning many languages. I'll be adding more languages.
 
-**Update** - Initially I had plans to add learning code for languages only but now I'll be adding info about frameworks and libraries also.
+**Update** - Initially I had plans to add learning code for languages only but now I'll be adding info about frameworks, data structures and libraries also.
 
 ### Target Audience
 
@@ -20,6 +20,7 @@ This repo contains the code for learning many languages. I'll be adding more lan
 
 1. ES6 (EcmaScript 2015)
 2. PHP
+3. C
 
 ### Added Frameworks
 
@@ -27,19 +28,18 @@ This repo contains the code for learning many languages. I'll be adding more lan
 
 ### Added Data Structures
 
-1. Linked Lists
-2. Stacks
-3. Queues
-4. Binary Search Trees
-
-**Note:** Currently I've added data structures in python only.
+1. Linked Lists - (python, java)
+2. Stacks - (python, java)
+3. Queues - (python, java)
+4. Binary Search Trees - (python, java)
+5. AVL Trees - (python)
+6. Heaps - (python)
 
 ### Upcoming Languages
 
-1. C
-2. java
-3. Python
-4. C#
+1. java
+2. Python
+3. C#
 
 ### Upcoming Frameworks
 
@@ -47,7 +47,7 @@ This repo contains the code for learning many languages. I'll be adding more lan
 
 ### Upcoming Data Structures
 
-1. AVL Trees
+1. Ternary Search Trees
 
 ### Learning/Reading Strategy
 
