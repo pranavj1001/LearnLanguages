@@ -34,6 +34,7 @@ This repo contains the code for learning many languages. I'll be adding more lan
 4. Binary Search Trees - (python, java)
 5. AVL Trees - (python)
 6. Heaps - (python)
+7. Ternary Search Trees - (python)
 
 ### Upcoming Languages
 
@@ -44,10 +45,6 @@ This repo contains the code for learning many languages. I'll be adding more lan
 ### Upcoming Frameworks
 
 1. Angular 4
-
-### Upcoming Data Structures
-
-1. Ternary Search Trees
 
 ### Learning/Reading Strategy
 
