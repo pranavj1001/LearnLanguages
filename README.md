@@ -47,8 +47,8 @@ This repo contains the code for learning many languages. I'll be adding more lan
 1. Angular 4
 
 ### Upcoming Data Structures
-1.Heap(java)
-2.AVL(java)
+1. Heap(java)
+2. AVL(java)
 
 ### Learning/Reading Strategy
 
