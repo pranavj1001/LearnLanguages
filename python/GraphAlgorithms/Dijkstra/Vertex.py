@@ -2,17 +2,11 @@ import sys
 
 class Vertex(object):
 
+    # constructor
+    # provides the basic structure of the vertex
     def __init__(self, name):
         self.name = name
-        self.visited = False
         self.predecessor = None
         self.neighbourList = []
+        # initially minDistance = the largest positive integer supported by the platform’s Py_ssize_t type
         self.minDistance = sys.maxsize
-
-    def __cmp__(self, other):
-        return self.cmp(self.minDistance, other.minDistance)
-
-    def __lt__(self, other):
-        selfPriority = self.minDistance
-        otherPriority = other.minDistance
-        return selfPriority < otherPriority

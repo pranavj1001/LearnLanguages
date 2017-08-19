@@ -2,6 +2,7 @@ from Vertex import Vertex
 from Edge import Edge
 from Algorithm import Algorithm
 
+# create the vertices
 vertexA = Vertex("A")
 vertexB = Vertex("B")
 vertexC = Vertex("C")
@@ -11,6 +12,7 @@ vertexF = Vertex("F")
 vertexG = Vertex("G")
 vertexH = Vertex("H")
 
+# create the edges
 edge1 = Edge(5, vertexA, vertexB)
 edge2 = Edge(8, vertexA, vertexH)
 edge3 = Edge(9, vertexA, vertexE)
@@ -28,6 +30,7 @@ edge14 = Edge(11, vertexC, vertexG)
 edge15 = Edge(1, vertexF, vertexC)
 edge16 = Edge(13, vertexF, vertexG)
 
+# define the relation between the edges and vertices
 vertexA.neighbourList.append(edge1)
 vertexA.neighbourList.append(edge2)
 vertexA.neighbourList.append(edge3)
@@ -45,6 +48,7 @@ vertexC.neighbourList.append(edge14)
 vertexF.neighbourList.append(edge15)
 vertexF.neighbourList.append(edge16)
 
+# apply dijkstra's algorithm
 dijkstra = Algorithm()
 dijkstra.calculateShortestPath(vertexA)
-dijkstra.getShortestPathTo(vertexH)
+dijkstra.getShortestPathTo(vertexF)
