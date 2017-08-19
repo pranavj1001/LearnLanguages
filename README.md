@@ -41,6 +41,7 @@ This repo contains the code for learning many languages. I'll be adding more lan
 1. Breadth First Search - (python, java)
 2. Depth First Search - (python, java)
 3. Dijkstra - (python)
+4. Bellman-Ford - (python)
 
 ### Upcoming Languages
 
@@ -59,9 +60,8 @@ This repo contains the code for learning many languages. I'll be adding more lan
 
 ### Upcoming Graph Algorithms
 
-1. Bellman - Ford
-2. Kruskal
-3. Prims
+1. Kruskal
+2. Prims
 
 ### Learning/Reading Strategy
 
