@@ -60,7 +60,7 @@ This repo contains the code for learning many languages. I'll be adding more lan
 1. Heaps - (java)
 2. AVL Trees - (java)
 
-### Learning/Reading Strategy
+### Learning/Reading Strategy for Languages only
 
 Just go through the code file from the starting. The file is prepared in a such that it starts from basics first and then covers the advanced topics.
 Uncomment the 'console.log' lines to read the message as you go through the code. Finally, play around the code and get your hands dirty.
