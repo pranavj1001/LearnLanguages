@@ -43,6 +43,7 @@ This repo contains the code for learning many languages. I'll be adding more lan
 3. Dijkstra - (python)
 4. Bellman-Ford - (python)
 5. Kruskal - (pyhton)
+6. Prims - (python)
 
 ### Upcoming Languages
 
@@ -58,10 +59,6 @@ This repo contains the code for learning many languages. I'll be adding more lan
 
 1. Heaps - (java)
 2. AVL Trees - (java)
-
-### Upcoming Graph Algorithms
-
-1. Prims
 
 ### Learning/Reading Strategy
 
