@@ -67,21 +67,48 @@ class BST{
 			System.out.print(root.data+" ");
 		}
 	}
-	void getMin(Node root){
+	int getMin(Node root){
 		if(root.left == null){
-			System.out.println("Minimum value of node in tree:"+root.data);
+			return root.data;
 		}
 		else {
-			getMin(root.left);
+			return getMin(root.left);
 		}
 	}
-	void getMax(Node root){
+	int getMax(Node root){
 		if(root.right == null){
-			System.out.println("Maximum value of node in tree:"+root.data);
+			return root.data;
 		}
 		else {
-			getMax(root.right);
+			return getMax(root.right);
 		}
+	}
+	void delete(int d){
+		root=deleting(root,d);
+	}
+
+	Node deleting(Node root ,int d){
+		if(root == null){
+			return root;
+		}
+		if(d > root.data){
+			root.right = deleting(root.right,d);
+		}
+		else if (d < root.data) {
+			root.left = deleting(root.left,d);
+		}
+		else{
+			if (root.left == null) {
+				return root.right;
+			}
+			else if (root.right == null) {
+				return root.left;
+			}
+			root.data = getMin(root.right);
+			root.right=deleting(root.right,root.data);
+		}
+		return root;
+
 	}
 
 	public static void main(String[] args) {
@@ -117,8 +144,17 @@ class BST{
 		binaryST.postorder(binaryST.root);
 		System.out.println();
 
-		binaryST.getMin(binaryST.root);
+		
+		System.out.println("Minimum value of node in tree:"+binaryST.getMin(binaryST.root));
 
-		binaryST.getMax(binaryST.root);
+		System.out.println("Maximum value of node in tree:"+binaryST.getMax(binaryST.root));
+
+		System.out.println("Before deleting Node "+18);
+		binaryST.inorder(binaryST.root);
+		System.out.println();
+		binaryST.delete(18);
+		System.out.println("After deleting Node "+18);
+		binaryST.inorder(binaryST.root);
+		System.out.println();
 	}
 }
