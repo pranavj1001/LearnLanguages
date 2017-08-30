@@ -36,6 +36,15 @@ This repo contains the code for learning many languages. I'll be adding more lan
 6. Heaps - (python)
 7. Ternary Search Trees - (python)
 
+### Added Graph Algorithms
+
+1. Breadth First Search - (python, java)
+2. Depth First Search - (python, java)
+3. Dijkstra - (python)
+4. Bellman-Ford - (python)
+5. Kruskal - (pyhton)
+6. Prims - (python)
+
 ### Upcoming Languages
 
 1. java
@@ -47,10 +56,11 @@ This repo contains the code for learning many languages. I'll be adding more lan
 1. Angular 4
 
 ### Upcoming Data Structures
-1. Heap(java)
-2. AVL(java)
 
-### Learning/Reading Strategy
+1. Heaps - (java)
+2. AVL Trees - (java)
+
+### Learning/Reading Strategy for Languages only
 
 Just go through the code file from the starting. The file is prepared in a such that it starts from basics first and then covers the advanced topics.
 Uncomment the 'console.log' lines to read the message as you go through the code. Finally, play around the code and get your hands dirty.
