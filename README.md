@@ -48,6 +48,8 @@ This repo contains the code for learning many languages. I'll be adding more lan
 ### Added Search Algorithms
 
 1. Sequential Search - (python)
+2. Binary Search - (python)
+3. Hashing - (python)
 
 ### Upcoming Languages
 
@@ -60,10 +62,14 @@ This repo contains the code for learning many languages. I'll be adding more lan
 1. Heaps - (java)
 2. AVL Trees - (java)
 
-### Upcoming Search Algorithms
+### Upcoming Sorting Algorithms
 
-1. Binary Search
-2. Hashing
+1. Bubble Sort
+2. Insertion Sort
+3. Shell Sort
+4. Shell Sort
+5. Merge Sort
+6. Quick Sort
 
 ### Learning/Reading Strategy for Languages only
 
