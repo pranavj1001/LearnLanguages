@@ -45,20 +45,25 @@ This repo contains the code for learning many languages. I'll be adding more lan
 5. Kruskal - (pyhton)
 6. Prims - (python)
 
+### Added Search Algorithms
+
+1. Sequential Search - (python)
+
 ### Upcoming Languages
 
 1. java
 2. Python
 3. C#
 
-### Upcoming Frameworks
-
-1. Angular 4
-
 ### Upcoming Data Structures
 
 1. Heaps - (java)
 2. AVL Trees - (java)
+
+### Upcoming Search Algorithms
+
+1. Binary Search
+2. Hashing
 
 ### Learning/Reading Strategy for Languages only
 
