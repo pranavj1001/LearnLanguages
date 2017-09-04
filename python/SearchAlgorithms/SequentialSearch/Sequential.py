@@ -1,3 +1,4 @@
+# method to search for an element in an unordered list
 def sequential_search_unordered_list(array, element):
 
     pos = 0
@@ -15,6 +16,9 @@ def sequential_search_unordered_list(array, element):
 unordered_list = [1, 65, 37, 49, 52]
 print(sequential_search_unordered_list(unordered_list, 6))
 
+# method to search for an element in an ordered list
+# the only difference between the two is that
+# we stop when we find an element greater than our search target
 def sequential_search_ordered_list(array, element):
 
     pos = 0
