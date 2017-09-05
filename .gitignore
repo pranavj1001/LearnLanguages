@@ -11,7 +11,7 @@ db.sqlite3
 .DS_Store
 python/DataStructures/**/.idea
 
-python/SearchAlgorithms/**/.idea
+python/**/**/.idea
 
 **/GraphAlgorithms/**/.idea
 java/GraphAlgorithms/**/out/
