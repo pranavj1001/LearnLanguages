@@ -51,6 +51,11 @@ This repo contains the code for learning many languages. I'll be adding more lan
 2. Binary Search - (python)
 3. Hashing - (python)
 
+### Added Sorting Algorithms
+
+1. Bubble Sort - (python)
+2. Selection Sort - (python)
+
 ### Upcoming Languages
 
 1. java
@@ -64,12 +69,11 @@ This repo contains the code for learning many languages. I'll be adding more lan
 
 ### Upcoming Sorting Algorithms
 
-1. Bubble Sort
-2. Insertion Sort
+1. Insertion Sort
+2. Shell Sort
 3. Shell Sort
-4. Shell Sort
-5. Merge Sort
-6. Quick Sort
+4. Merge Sort
+5. Quick Sort
 
 ### Learning/Reading Strategy for Languages only
 
