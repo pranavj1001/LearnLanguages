@@ -55,6 +55,7 @@ This repo contains the code for learning many languages. I'll be adding more lan
 
 1. Bubble Sort - (python)
 2. Selection Sort - (python)
+3. Insertion Sort - (python)
 
 ### Upcoming Languages
 
@@ -69,11 +70,10 @@ This repo contains the code for learning many languages. I'll be adding more lan
 
 ### Upcoming Sorting Algorithms
 
-1. Insertion Sort
+1. Shell Sort
 2. Shell Sort
-3. Shell Sort
-4. Merge Sort
-5. Quick Sort
+3. Merge Sort
+4. Quick Sort
 
 ### Learning/Reading Strategy for Languages only
 
