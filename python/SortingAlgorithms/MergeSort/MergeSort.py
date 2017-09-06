@@ -6,12 +6,18 @@ def merge_sort(array):
         leftHalf = array[:mid]
         rightHalf = array[mid:]
 
+        print("<>",leftHalf)
+        print("<>",rightHalf)
+
         merge_sort(leftHalf)
         merge_sort(rightHalf)
 
         i = 0
         j = 0
         k = 0
+
+        print(leftHalf)
+        print(rightHalf)
 
         while i < len(leftHalf) and j < len(rightHalf):
 
@@ -33,6 +39,8 @@ def merge_sort(array):
             array[k] = rightHalf[j]
             j += 1
             k += 1
+
+    print("Merged", array)
 
     return array
 
