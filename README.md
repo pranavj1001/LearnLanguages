@@ -58,6 +58,7 @@ This repo contains the code for learning many languages. I'll be adding more lan
 3. Insertion Sort - (python)
 4. Shell Sort - (python)
 5. Merge Sort - (python)
+6. Quick Sort - (python)
 
 ### Upcoming Languages
 
@@ -69,10 +70,6 @@ This repo contains the code for learning many languages. I'll be adding more lan
 
 1. Heaps - (java)
 2. AVL Trees - (java)
-
-### Upcoming Sorting Algorithms
-
-1. Quick Sort
 
 ### Learning/Reading Strategy for Languages only
 
