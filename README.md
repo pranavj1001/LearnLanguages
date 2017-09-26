@@ -76,6 +76,10 @@ This repo contains the code for learning many languages. I'll be adding more lan
 Just go through the code file from the starting. The file is prepared in a such that it starts from basics first and then covers the advanced topics.
 Uncomment the 'console.log' lines to read the message as you go through the code. Finally, play around the code and get your hands dirty.
 
+### Learning/Reading Strategy for Algorithms and Data Structures
+
+Just copy the code or clone the repo and try out the code on your machine. Try to experiment with the code by changing input values. Also, print the variables at certain points for more understanding. 
+
 ### Want to contribute?
 
 Sure, you can add files for new languages or can update the existing files. Just send me a pull request.
