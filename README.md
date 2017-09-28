@@ -33,7 +33,7 @@ This repo contains the code for learning many languages. I'll be adding more lan
 3. Queues - (python, java)
 4. Binary Search Trees - (python, java)
 5. AVL Trees - (python)
-6. Heaps - (python)
+6. Heaps - (python,java)
 7. Ternary Search Trees - (python)
 
 ### Added Graph Algorithms
@@ -68,8 +68,10 @@ This repo contains the code for learning many languages. I'll be adding more lan
 
 ### Upcoming Data Structures
 
-1. Heaps - (java)
-2. AVL Trees - (java)
+1. AVL Trees - (java)
+2. Sorting Algorthim - (java)
+3. Search Algorithm - (java)
+4. Graph Algorithm - (java)
 
 ### Learning/Reading Strategy for Languages only
 
