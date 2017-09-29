@@ -69,9 +69,6 @@ This repo contains the code for learning many languages. I'll be adding more lan
 ### Upcoming Data Structures
 
 1. AVL Trees - (java)
-2. Sorting Algorthim - (java)
-3. Search Algorithm - (java)
-4. Graph Algorithm - (java)
 
 ### Learning/Reading Strategy for Languages only
 
