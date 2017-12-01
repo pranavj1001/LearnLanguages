@@ -1,10 +1,10 @@
-/*'class' is keyword, its used to declare that new class is being defined.
+/*'class' is keyword, its used to declare that new class.
 Here 'HelloWorld' is an identifier that is name of class
 */
 class HelloWorld {
     //program begins with call to main()
     //public is access modifier,which allows the programmer to control the visibility of class member.
-    //class member are all function and all variable declared and defined in class.
+    //class member are all function and all Variable declared and defined in class.
     /*
     When class member is preceded by   public  ,
     then that member may be access by code outside the class in which it is declared.
