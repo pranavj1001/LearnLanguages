@@ -1,6 +1,3 @@
-/**
- * Created by USER on 01-12-2017.
- */
 public class Variable {
 
     public static void main(String args[]){
