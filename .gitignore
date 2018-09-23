@@ -10,6 +10,7 @@ db.sqlite3
 /static
 .DS_Store
 python/DataStructures/**/.idea
+*/.ipynb_checkpoints
 
 python/**/**/.idea
 
