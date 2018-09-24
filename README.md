@@ -70,6 +70,11 @@ This repo contains the code for learning many languages. I'll be adding more lan
 
 1. AVL Trees - (java)
 
+### Upcoming Python Libraries
+
+1. NumPy
+
+
 ### Learning/Reading Strategy for Languages only
 
 Just go through the code file from the starting. The file is prepared in a such that it starts from basics first and then covers the advanced topics.
