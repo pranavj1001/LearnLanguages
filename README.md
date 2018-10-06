@@ -60,6 +60,10 @@ This repo contains the code for learning many languages. I'll be adding more lan
 5. Merge Sort - (python)
 6. Quick Sort - (python)
 
+### Added Python Library
+
+1. NumPy
+
 ### Upcoming Languages
 
 1. java
@@ -72,7 +76,7 @@ This repo contains the code for learning many languages. I'll be adding more lan
 
 ### Upcoming Python Libraries
 
-1. NumPy
+1. Pandas
 
 
 ### Learning/Reading Strategy for Languages only
