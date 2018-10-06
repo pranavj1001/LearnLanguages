@@ -60,7 +60,7 @@ This repo contains the code for learning many languages. I'll be adding more lan
 5. Merge Sort - (python)
 6. Quick Sort - (python)
 
-### Added Python Library
+### Added Python Libraries
 
 1. NumPy
 
