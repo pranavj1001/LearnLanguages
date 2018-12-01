@@ -63,6 +63,7 @@ This repo contains the code for learning many languages. I'll be adding more lan
 ### Added Python Libraries
 
 1. NumPy
+2. Pandas
 
 ### Upcoming Languages
 
@@ -73,11 +74,6 @@ This repo contains the code for learning many languages. I'll be adding more lan
 ### Upcoming Data Structures
 
 1. AVL Trees - (java)
-
-### Upcoming Python Libraries
-
-1. Pandas
-
 
 ### Learning/Reading Strategy for Languages only
 
