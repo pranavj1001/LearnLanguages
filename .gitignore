@@ -16,3 +16,5 @@ python/**/**/.idea
 
 **/GraphAlgorithms/**/.idea
 java/GraphAlgorithms/**/out/
+
+Rust/helloWorld
