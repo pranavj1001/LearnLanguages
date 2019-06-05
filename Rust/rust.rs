@@ -49,7 +49,10 @@ struct Person<'a> {
 // Implement `Display` for `Person`.
 impl<'a> fmt::Display for Person<'a> {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        write!(f, "(Name is {} and Age is {})", self.name, self.age)
+        // Try `write!` to see if it errors. If it errors, return
+        // the error. Otherwise continue.
+        write!(f, "(Name is {} and Age is {})", self.name, self.age)?;
+        write!(f, "")
     }
 }
 fn main() {
