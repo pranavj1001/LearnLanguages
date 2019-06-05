@@ -34,20 +34,33 @@
 // The fmt::Debug trait makes this very straightforward. 
 // All types can derive (automatically create) the fmt::Debug implementation. 
 // This is not true for fmt::Display which must be manually implemented.
+// Below given example shows automatic derive(Debug) implementation
+// and manual Display implementation.
 
 // !!!--- start uncommenting from line below ---!!!
+// Import (via `use`) the `fmt` module to make it available.
+use std::fmt; // Import `fmt`
 #[derive(Debug)]
 struct Person<'a> {
     name: &'a str,
     age: u8
+}
+
+// Implement `Display` for `Person`.
+impl<'a> fmt::Display for Person<'a> {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "(Name is {} and Age is {})", self.name, self.age)
+    }
 }
 fn main() {
     let name = "Peter";
     let age = 27;
     let peter = Person { name, age };
 
-    // Pretty print
-    println!("{:#?}", peter);
+    println!("Compare Person");
+    println!("Debug: Normal {:?}", peter);
+    println!("Debug: Pretty {:#?}", peter);
+    println!("Display: {}", peter);
 }
 // !!!--- end uncommenting from line above ---!!!
 // ------------------ Debugging end ------------------
