@@ -39,59 +39,92 @@
 
 // !!!--- start uncommenting from line below ---!!!
 // Import (via `use`) the `fmt` module to make it available.
-use std::fmt::{self, Formatter, Display};
-#[derive(Debug)]
-struct Person<'a> {
-    name: &'a str,
-    age: u8
-}
+// use std::fmt::{self, Formatter, Display};
+// #[derive(Debug)]
+// struct Person<'a> {
+//     name: &'a str,
+//     age: u8
+// }
 
-// Implement `Display` for `Person`.
-impl<'a> fmt::Display for Person<'a> {
-    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        // Try `write!` to see if it errors. If it errors, return
-        // the error. Otherwise continue.
-        write!(f, "(Name is {} and Age is {})", self.name, self.age)?;
-        write!(f, "")
-    }
-}
+// // Implement `Display` for `Person`.
+// impl<'a> fmt::Display for Person<'a> {
+//     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+//         // Try `write!` to see if it errors. If it errors, return
+//         // the error. Otherwise continue.
+//         write!(f, "(Name is {} and Age is {})", self.name, self.age)?;
+//         write!(f, "")
+//     }
+// }
 
-#[derive(Debug)]
-struct Color {
-    red: u8,
-    green: u8,
-    blue: u8,
-}
+// #[derive(Debug)]
+// struct Color {
+//     red: u8,
+//     green: u8,
+//     blue: u8,
+// }
 
-impl Display for Color {
-    // `f` is a buffer, this method must write the formatted string into it
-    fn fmt(&self, f: &mut Formatter) -> fmt::Result {
-        // `write!` is like `format!`, but it will write the formatted string
-        // into a buffer (the first argument)
-        write!(f, "RGB ({}, {}, {}) 0x{:02.X}{:02.X}{:02.X}", 
-            self.red, self.green, self.blue, self.red, self.green, self.blue)
-    }
-}
+// impl Display for Color {
+//     // `f` is a buffer, this method must write the formatted string into it
+//     fn fmt(&self, f: &mut Formatter) -> fmt::Result {
+//         // `write!` is like `format!`, but it will write the formatted string
+//         // into a buffer (the first argument)
+//         write!(f, "RGB ({}, {}, {}) 0x{:02.X}{:02.X}{:02.X}", 
+//             self.red, self.green, self.blue, self.red, self.green, self.blue)
+//     }
+// }
 
-fn main() {
-    let name = "Peter";
-    let age = 27;
-    let peter = Person { name, age };
+// fn main() {
+//     let name = "Peter";
+//     let age = 27;
+//     let peter = Person { name, age };
 
-    println!("Compare Person");
-    println!("Debug: Normal {:?}", peter);
-    println!("Debug: Pretty {:#?}", peter);
-    println!("Display: {}", peter);
+//     println!("Compare Person");
+//     println!("Debug: Normal {:?}", peter);
+//     println!("Debug: Pretty {:#?}", peter);
+//     println!("Display: {}", peter);
 
-    for color in [
-        Color { red: 128, green: 255, blue: 90 },
-        Color { red: 0, green: 3, blue: 254 },
-        Color { red: 0, green: 0, blue: 0 },
-    ].iter() {
-        // Switch this to use {} once you've added an implementation
-        // for fmt::Display
-        println!("{:}", *color);
-    }
-}
+//     for color in [
+//         Color { red: 128, green: 255, blue: 90 },
+//         Color { red: 0, green: 3, blue: 254 },
+//         Color { red: 0, green: 0, blue: 0 },
+//     ].iter() {
+//         // Switch this to use {} once you've added an implementation
+//         // for fmt::Display
+//         println!("{:}", *color);
+//     }
+// }
 // !!!--- end uncommenting from line above ---!!!
 // ------------------ Debugging end ------------------
+
+// Chapter 3
+// ------------------ Primitives start ------------------
+// Rust provides access to a wide variety of primitives.
+
+// !!!--- start uncommenting from line below ---!!!
+fn main() {
+    // Variables can be type annotated.
+    let logical: bool = true;
+
+    let a_float: f64 = 1.0;  // Regular annotation
+    let an_integer   = 5i32; // Suffix annotation
+
+    // Or a default will be used.
+    let default_float   = 3.0; // `f64`
+    let default_integer = 7;   // `i32`
+    
+    // A type can also be inferred from context 
+    let mut inferred_type = 12; // Type i64 is inferred from another line
+    inferred_type = 4294967296i64;
+    
+    // A mutable variable's value can be changed.
+    let mut mutable = 12; // Mutable `i32`
+    mutable = 21;
+    
+    // Error! The type of a variable can't be changed.
+    //mutable = true;
+    
+    // Variables can be overwritten with shadowing.
+    let mutable = true;
+}
+// !!!--- end uncommenting from line above ---!!!
+// ------------------ Primitives end ------------------
