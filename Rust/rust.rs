@@ -39,7 +39,7 @@
 
 // !!!--- start uncommenting from line below ---!!!
 // Import (via `use`) the `fmt` module to make it available.
-use std::fmt; // Import `fmt`
+use std::fmt::{self, Formatter, Display};
 #[derive(Debug)]
 struct Person<'a> {
     name: &'a str,
@@ -55,6 +55,24 @@ impl<'a> fmt::Display for Person<'a> {
         write!(f, "")
     }
 }
+
+#[derive(Debug)]
+struct Color {
+    red: u8,
+    green: u8,
+    blue: u8,
+}
+
+impl Display for Color {
+    // `f` is a buffer, this method must write the formatted string into it
+    fn fmt(&self, f: &mut Formatter) -> fmt::Result {
+        // `write!` is like `format!`, but it will write the formatted string
+        // into a buffer (the first argument)
+        write!(f, "RGB ({}, {}, {}) 0x{:02.X}{:02.X}{:02.X}", 
+            self.red, self.green, self.blue, self.red, self.green, self.blue)
+    }
+}
+
 fn main() {
     let name = "Peter";
     let age = 27;
@@ -64,6 +82,16 @@ fn main() {
     println!("Debug: Normal {:?}", peter);
     println!("Debug: Pretty {:#?}", peter);
     println!("Display: {}", peter);
+
+    for color in [
+        Color { red: 128, green: 255, blue: 90 },
+        Color { red: 0, green: 3, blue: 254 },
+        Color { red: 0, green: 0, blue: 0 },
+    ].iter() {
+        // Switch this to use {} once you've added an implementation
+        // for fmt::Display
+        println!("{:}", *color);
+    }
 }
 // !!!--- end uncommenting from line above ---!!!
 // ------------------ Debugging end ------------------
